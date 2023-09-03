@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA-POD</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/nasa-32.png" type="image/x-icon">
+    
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="heading-text">NASA Picture of the Day</h1>
+    </header>
+    <main>
+        <section id="current-image-container">
+            <div>
+                <img id="pod-image" loading="lazy"></img>
+            </div>
+            <div>
+                <div id="pod-title"></div>
+                <div id="pod-description"></div>    
+            </div>
+        </section>
+        <section id="search-form-container">
+            <h2>Search for a Picture of the Day</h2>
+            <form id="search-form">
+                <label for="search-input">Select a Date:</label>
+                <input type="date" name="date" id="search-input">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+        <section id="search-history-container">
+            <h2>Previous Searches</h2>
+            <ul id="search-history"></ul>
+        </section>
+    </main>
+    <footer>
+        Made with ❤️ by Reniyal.
+    </footer>
+</body>
+</html>
