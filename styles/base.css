@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,14 +10,14 @@
 
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     line-height: 1.5;
     color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-body{
+body {
     margin: 0;
     padding: 0 2rem;
     min-height: 100vh;
@@ -26,23 +28,26 @@ body{
     overflow-x: hidden;
     font-size: 1rem;
 }
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin-top: 1rem;
     color: #fff;
     font-weight: 500;
 }
-h1{
+h1 {
     font-size: 3rem;
     line-height: 3.5rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
     line-height: 2.5rem;
 }
 
-
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -50,50 +55,49 @@ section{
     width: 100%;
 }
 
-input{
+input {
     cursor: pointer;
     padding: 0.25rem 1.25rem;
     border-radius: 0.25rem;
     background-color: transparent;
     font-size: 0.875rem;
-    border: 1px solid #999; 
+    border: 1px solid #999;
     color-scheme: dark;
 }
-input[type="date"]:focus{
-    border: 2px solid #fff; 
+input[type="date"]:focus {
+    border: 2px solid #fff;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     cursor: pointer;
     padding: 0.5rem 1.25rem;
     border-radius: 0.25rem;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1000ms;
 }
-input:hover{
+input:hover {
     color-scheme: light;
     background-color: #f0f0f0d2;
     color: black;
 }
 
-
-ul,form{
+ul,
+form {
     margin-top: 1rem;
 }
-li{
+li {
     list-style: none;
     font-size: 1rem;
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     color: white;
 }
-li:active{
+li:active {
     scale: 1.1;
-    translate: 0.5rem 0
+    translate: 0.5rem 0;
 }
 
-
-footer{
+footer {
     text-align: right;
 }

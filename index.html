@@ -6,6 +6,7 @@
     <title>NASA-POD</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="shortcut icon" href="assets/nasa-32.png" type="image/x-icon">
     
     <script src="app.js" defer></script>
@@ -13,11 +14,19 @@
 <body>
     <header>
         <h1 id="heading-text">NASA Picture of the Day</h1>
+        <nav>
+            <div class="collapsible"></div>
+            <div class="content">
+                <a class="navLinks" href="#">Home</a>
+                <a class="navLinks" href="#search-form-container">Search New</a>
+                <a class="navLinks" href="#search-history-container">Search History</a>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="current-image-container">
-            <div>
-                <img id="pod-image" loading="lazy"></img>
+            <div id="image-container">
+                <img id="pod-image" class="loading" loading="lazy""></img>
             </div>
             <div>
                 <div id="pod-title"></div>
